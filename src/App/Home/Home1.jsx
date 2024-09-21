@@ -7,7 +7,7 @@ const content =()=>{
     vcxvbbkfjkhjk
     </>)
 }
-const About = () => {
+const Home1 = () => {
   return (
     <div>
       <Dashboard  props1={content()}/>
@@ -18,4 +18,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Home1

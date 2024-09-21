@@ -11,6 +11,10 @@ import About from './App/About/About'
 import Videos from './App/Videos/Videos'
 import Library from './App/Library/Library'
 import Contact from './App/Contact/Contact'
+import About2 from './App/About/About2'
+import Home2 from './App/Home/Home2'
+import Home1 from './App/Home/Home1'
+import { Switch } from '@mui/material'
 function App() {
 
   return (
@@ -21,8 +25,15 @@ function App() {
           <Route path="/Signup" element={<Signup />} />
         </Route>
         <Route element={<ProtectedRoute />}>
-          <Route path='/home' element={<Home />} />
-          <Route path='/about' element={<About />} />
+          
+
+        <Route path='/home' element={<Home />} />
+          <Route path='/home/home1' element={<Home1 />} />
+          <Route path='/home/home2' element={<Home2 />} />
+          {/* <Route path='/about' element={<About />} /> */}
+          <Route path='/about/about1' element={<About />} />
+          <Route path='/about/about2' element={<About2 />} />
+
           <Route path='/videos' element={<Videos />} />
           <Route path='/library' element={<Library />} />
           <Route path='/contact' element={<Contact />} />
